@@ -1,0 +1,15 @@
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - 5etools
+    image: 5etools
+    volumes:
+      - ./data:/app/data
+      - ./img:/app/img
+      - ./homebrew:/app/homebrew
+    ports:
+      - "5000:5000"

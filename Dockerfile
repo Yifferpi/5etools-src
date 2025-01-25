@@ -1,3 +1,11 @@
-FROM ghcr.io/5etools-mirror-3/5etools-img:latest
+FROM node:17.1.0
 
-COPY . /var/www/localhost/htdocs/
+COPY . /app
+
+WORKDIR /app
+
+RUN npm install
+
+EXPOSE 5000
+
+ENTRYPOINT ["npm", "run", "serve:dev"]

@@ -11,14 +11,15 @@
 !*.svg
 !*.xml
 
-!audio
+#./audio
 !css
-!data
+#./data
 !fonts
-!homebrew
+#./homebrew
 !icon
 !image
-!img
+!package.json
+#./img
 !js
 !lib
 !pdf
